@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <section>
+      <h2>Password Generator</h2>
+      <div class="container password-container">
+        <div class="password">asdasdasd2</div>
+        <div class="icons">
+          <ion-icon class="icon" name="copy"></ion-icon>
+        </div>
+      </div>
+
+      <div class="container generate-container">
+        <div class="character">
+          <div>Character Length</div>
+          <div class="count">10</div>
+        </div>
+
+        <div class="input-range">
+          <input type="range" class="passlength" min="8" max="20" />
+        </div>
+
+        <div class="checkboxs">
+          <div class="error hidden">Select at least one.</div>
+          <div>
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="lowercase" />
+            <label for="lowercase">Include Lowercase Letters</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="numbers" />
+            <label for="numbers">Include Numbers</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="symbol" />
+            <label for="symbol">Include Symbols</label>
+          </div>
+        </div>
+
+        <div class="strength">
+          <div>Strength</div>
+          <div class="details">
+            <div class="category"></div>
+            <div class="bar" data-bar="0"></div>
+            <div class="bar" data-bar="1"></div>
+            <div class="bar" data-bar="2"></div>
+            <div class="bar" data-bar="3"></div>
+          </div>
+        </div>
+
+        <div class="buttons">Generate</div>
+      </div>
+    </section>
+  </body>
+</html>

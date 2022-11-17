@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #131219, #111016);
+  color: #aeb9b5;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #686d71;
+  text-align: center;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #24232b;
+  padding: 12px 15px;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password-container .password {
+  font-size: 1.5rem;
+  color: #666;
+  height: 30px;
+}
+
+.password-container .icons {
+  color: #a4ffaf;
+  cursor: pointer;
+}
+
+.generate-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.generate-container .character {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generate-container .count {
+  font-size: 1.5rem;
+  color: #a4ffaf;
+}
+
+input[type="range"] {
+  accent-color: #e3e2e9;
+  color: #a4ffaf;
+  width: 100%;
+  cursor: pointer;
+}
+
+.checkboxs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+}
+
+.checkboxs > div {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #e3e2e9;
+  margin-right: 8px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #a4ffaf;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+.strength {
+  background-color: #18171f;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.strength > div {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.strength .details {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.strength .category {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.bar {
+  width: 6px;
+  height: 15px;
+  border: 1px solid #e3e2e9;
+}
+
+.bar.active {
+  background-color: #f2ce76;
+  border: none;
+}
+
+.buttons {
+  width: 100%;
+  height: 40px;
+  background-color: #a4ffaf;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.error {
+  color: red;
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none !important;
+}
